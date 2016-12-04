@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      lang="en">
+
+<h:head>
+
+    <title>Matrix Admin</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <h:outputStylesheet name="bootstrap.min.css" library="css"/>
+    <h:outputStylesheet name="bootstrap-responsive.min.css" library="css"/>
+    <h:outputStylesheet name="fullcalendar.css" library="css"/>
+    <h:outputStylesheet name="matrix-style.css" library="css"/>
+    <h:outputStylesheet name="matrix-media.css" library="css"/>
+    <h:outputStylesheet name="css/font-awesome.css" library="font-awesome"/>
+    <h:outputStylesheet name="jquery.gritter.css" library="css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'/>
+
+</h:head>
+
+<h:body>
+
+    <ui:insert name="header">
+        <ui:include src="/WEB-INF/template/commonHeader.xhtml"/>
+    </ui:insert>
+
+    <!--sidebar-menu-->
+    <div id="sidebar">
+        <ui:insert name="sidebar">
+            <ui:include src="/WEB-INF/template/commonSidebar.xhtml"/>
+        </ui:insert>
+    </div>
+
+    <!--main-container-part-->
+    <div id="content">
+        <ui:insert name="content">
+            <ui:include src="/WEB-INF/template/commonContent.xhtml"/>
+        </ui:insert>
+    </div>
+
+    <!--Footer-part-->
+    <ui:insert name="footer">
+        <ui:include src="/WEB-INF/template/commonFooter.xhtml"/>
+    </ui:insert>
+
+</h:body>
+</html>
